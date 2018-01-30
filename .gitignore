@@ -50,3 +50,9 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+/001/bug
+/001/bug1
+/001/bug2
+/001/circle
+/001/grid
+/001/hello

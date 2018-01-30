@@ -1,0 +1,60 @@
+#+TITLE: Day 001
+
+/I'm going on an adventure!/
+
+[[file:screenshot.png]]
+
+OK, here we go.  This isn't so bad.  It's relieving to hear that C
+uses /relatively few reserved words/.  For some reason I pictured a
+lot of crazy perly regex looking monstrocities.  So far, everything
+looks pretty recognizeable.  One of the exercises did have an =&=,
+which I think might be called a "memory address" or something.
+
+I found the difference between a "linker" and a "compiler"
+interesting.  I guess gcc does both at the same time, so I would have
+never thought there were separate steps for (1) turning the source
+code into machine language and (2) compiling it into a binary from
+other object files.
+
+But so far so good.  I feel pretty good about the book I chose.  It
+was just the right amount of history and absolutely not Microsoft or
+Unix leaning.  I really wonder how productive I'll be after 100 days.
+
+I had about ten minutes left at the end, so I just read the man page
+for gcc.  By default, GCC will do preprocessing, assembly, compilation
+proper, and linking.  There are flags you can pass in to stop it at
+any of these points.  For example, I re-compiled my hello.c example
+with the =-S= flag and, instead of an object file, it spit out this.
+
+#+BEGIN_EXAMPLE
+          .file   "hello.c"
+          .text
+          .section        .rodata
+  .LC0:
+          .string "Hello, World!"
+          .text
+          .globl  main
+          .type   main, @function
+  main:
+  .LFB0:
+          .cfi_startproc
+          pushq   %rbp
+          .cfi_def_cfa_offset 16
+          .cfi_offset 6, -16
+          movq    %rsp, %rbp
+          .cfi_def_cfa_register 6
+          leaq    .LC0(%rip), %rdi
+          call    puts@PLT
+          movl    $0, %eax
+          popq    %rbp
+          .cfi_def_cfa 7, 8
+          ret
+          .cfi_endproc
+  .LFE0:
+          .size   main, .-main
+          .ident  "GCC: (GNU) 7.2.1 20180116"
+          .section        .note.GNU-stack,"",@progbits
+#+END_EXAMPLE
+
+Is this private?  Is my private SSh key somewhere in that mess?  Did I
+just heartbleed-meltdown myself?  Who knows.
