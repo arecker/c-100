@@ -1,0 +1,68 @@
+#+TITLE: Day 002
+
+/First things first: open up the car hood.  That's good, this ensures
+she doesn't see how confused you are./
+
+(paraphrase of Jerry Seinfeld)
+
+[[file:screenshot.png]]
+
+This was a fun lesson.  While dissecting the components of a program
+(functions, comments, etc), I got to mess with some fun code.
+Additionally, I got to finally include something other that
+=stdio.h=.  You can imagine my excitement when I learned there was
+also a =string.h= and even a =stdlib.h=.
+
+One thing I just noticed is that there are no errors or exceptions.
+One of the programs I made read in data from a file.
+
+#+BEGIN_SRC c
+  fp = fopen(argv[1], "r")
+#+END_SRC
+
+I did a double take, because I hadn't yet checked if the file
+existed.  Will there be an exception?  A big ol stack trace?  Will a
+colorful CLI prompt and asci graphic ask me where the file is?
+
+It returned =NIL=, that's what it did.  That's it.  To make this work,
+you just need to do this.
+
+#+BEGIN_SRC c
+  if ((fp = fopen(argv[1], "r")) == NULL)
+  {
+    // file doesn't exist
+    return 1;
+  }
+#+END_SRC
+
+All this time I thought computers were so much more delicate.  That
+the slightest mistake would corrupt a piece of memory forever or just
+make my laptop freeze.  I thought you had to protect everything.
+
+Something else that tickled me was a piece of code I had to fix.  This
+example program simply counts the number of characters in your name.
+
+#+BEGIN_SRC c
+  #include <stdio.h>
+  #include <string.h>
+
+  int main(void)
+  {
+    char buffer[256];
+
+    printf("Enter your name and press enter:\n");
+    fgets(buffer, 256, stdin);
+
+    printf("Your name has %d characters and spaces\n", (int) strlen(buffer));
+
+    return 0;
+  }
+#+END_SRC
+
+As written, only =buffer= was being passed to =fgets=, making gcc yell
+at me.  I remembered from the other example that =fgets= takes a
+buffer, a buffer size, and some kind of input source I guess.
+Magically I had access to =stdin= somehow, and that seemed to make
+sense.  To add to the mysteries rolling around in my head, one of the
+examples magically received the number of CLI args in =main=, despite
+me using =main(void)= this entire time.
