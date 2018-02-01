@@ -1,0 +1,30 @@
+#+TITLE: Day 003
+
+/All I see is blonde... brunette... readhead./
+
+[[file:screenshot.png]]
+
+Today was kind of a dry lesson.  Just learned about variables,
+constants, and how much memory each data type uses.  I used up the
+extra free time to play around with benchmarks.  I wrote a program
+that would count the number of characters in an ominously named
+"bible.txt" that contains the entire Bible.  As expected, C out
+performed python by a few extra deciseconds.  Milliseconds?
+Cubitseconds?  That's probably it.
+
+#+BEGIN_EXAMPLE
+  alex@lappy486:003$ time ./a.out
+  There are 4452070 characters in the bible
+  real    0m0.012s
+  user    0m0.012s
+  sys     0m0.001s
+  alex@lappy486:003$ time python bible.py
+  There are 4452068 characters in the bible
+
+  real    0m0.052s
+  user    0m0.044s
+  sys     0m0.008s
+#+END_EXAMPLE
+
+On top of that, my C version of the program managed to find a few
+extra characters.  What a wonderful and mysterious language.
