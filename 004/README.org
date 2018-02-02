@@ -1,0 +1,33 @@
+#+TITLE: Day 004
+
+/Sometimes the road less traveled is [throws keys on table] better
+left that way./  -- Jerry Seinfeld
+
+[[file:screenshot.png]]
+
+Today's lesson, I was basically just water-boarded with operators.
+Addition, subtraction, multiplication, modulus, AND/OR... all while
+dilligently learning each operators "precedence" over the others.  Not
+going to lie, I think if you ever have to resort to this kind of
+mechanism, you must be writing code incorrectly.  As long as variables
+and parentheses are respected, there's no excuse to be an asshole.  If
+anyone ever catches me writing something like this:
+
+#+BEGIN_SRC c
+  x = a < b || a < c && c < d;
+#+END_SRC
+
+They have permission to hit me.
+
+On a positive note: I realized that a lot of features that come with
+higher level languages are basically given to them for free by C.  I
+assumed that there were at least /some/ smoke an mirrors behind
+implementing something like this:
+
+#+BEGIN_SRC c
+  x = y = z = 1 + 2  // x == y == z == 3
+#+END_SRC
+
+Nope.  That's been in C all this time.  Suddenly I'm angry at all the
+times I've been coding in a language that /didn't/ let me assign more
+than one variable at a time.
