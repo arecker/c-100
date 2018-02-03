@@ -1,0 +1,43 @@
+#+TITLE: Day 005
+
+/Hey Mikey, I think he likes it./  -- The Matrix
+
+[[file:screenshot.png]]
+
+Today I got to read about functions.  The lesson, albeit a little
+basic, had more meat on it.  At least I got to play around with
+recursion.
+
+"Inline functions" are interesting to me.  These are special functions
+defined with the =inline= keyword.  This keyword instructs the
+compiler to simply copy the statements wherever it is getting
+invoked.  So presumably something like this.
+
+#+BEGIN_SRC C
+  #include <stdio.h>
+
+  void greet(void);
+
+  int main(void) {
+    greet();
+  }
+
+  inline void greet() {
+    printf("HELLO");
+  }
+#+END_SRC
+
+Would be the equivalent of this.
+
+#+BEGIN_SRC C
+  #include <stdio.h>
+
+  int main(void) {
+    printf("HELLO");
+  }
+#+END_SRC
+
+It's interesting how much C is dictated by compiler behavior.
+Compilers are certainly getting less mysterious.  Especially when
+learning things about how the "preprocesser" works.  Is a compiler
+really just a glorified copy/paste machine?
