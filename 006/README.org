@@ -1,0 +1,15 @@
+#+TITLE: Day 006
+
+/One thing you can't do is stop us now./  - Kanye West, "Famous"
+
+[[file:screenshot.png]]
+
+Today's lesson was pretty fun.  Learning for and while loops opens up
+more interesting practice examples.  I enjoyed the fake CLI menu
+mechanic in [[file:menu.c][menu.c]].  Kind of reminiscent of Java 101.  We did the same
+kind of imaginary CD collection exercise.
+
+Part of the reason I was losing interesting is because I was just
+copying the examples verbatim, then reading them over.  It's more fun
+when I skim the program and just try to recreate it without the
+specifics.  I think this new technique has given me second wind.
