@@ -1,0 +1,22 @@
+#+TITLE: Day 007
+
+/When this ends, at least I have a reason to live./  -- Brockhampton
+
+[[file:screenshot.png]]
+
+Not much happened in this lesson.  Just looked a /little/ more deeply
+into printf and scanf.  Also, C has a =puts= method.  What do you
+know, I guess I was wrong to give ruby shit for calling their print
+method =puts=.
+
+"Trigraphs" are hilariously strange.  The second I used one, I got
+yelled at by both emacs and GCC.  In fact, in order to compile the
+example, I had to use a special "allow-trigraphs-really" flag.  I
+don't really see the point of these.  I can't think of a time where
+I'd want to print something in brackets, and for some reason want to
+escape them with special ??symbols)?? in my program.  How strange.
+
+With the extra time I had left, I attempted to write a program that
+would print the time and date.  I got discouraged reading the
+documentation for =time.h=.  Apparently I need to learn more structs
+before I get into that.
