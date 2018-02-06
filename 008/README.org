@@ -1,0 +1,15 @@
+#+TITLE: Day 008
+
+/I ask you, Ned, what good is it to wear a crown?  The gods mock the
+prayers of kings and cowards alike./  -- King Robert Baratheon
+
+[[file:screenshot.png]]
+
+Now we're talking.  This was a breakthrough lesson.  I had a ton of
+fun reverse engineering the game stats program from just the output.
+There was actually a bug in my =find_best_average= function that I had
+to sniff out with good 'ol GDB.  Python has ruined me.  I must have
+spent ten minutes staring blankly at my screen trying to remember how
+python's =max([])= works.  There are a lot of cobwebs in my brain.
+GDB, I call on you.  If you are willing, I think this is the start of
+a beautiful friendship.
