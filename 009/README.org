@@ -1,0 +1,14 @@
+#+TITLE: Day 009
+
+/In C, the relationship ~data == &data[0]~ is true/.
+
+[[file:screenshot.png]]
+
+Holy moly.  I don't even know where to begin.  I knew something about
+addresses and pointers, and for a moment there I thought I was good.
+But then we started subtracting pointers from each other and, I
+just...  I feel like I lost my "computer science" innocence.  It's not
+tidy and beautiful down there.  It's a freaking war zone.
+
+
+This is a wild ride.  I'm having the time of my life.
