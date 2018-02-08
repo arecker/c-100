@@ -1,0 +1,11 @@
+#+TITLE: Day 010
+
+/Waves don't die, baby.  Let me crash here for a moment./
+
+[[file:screenshot.png]]
+
+Well today was challenging.  I might have to do this lesson over since
+I ran out of time.  One of the examples in the book wasn't compiling
+and was actually throwing a pretty spectacular =segmentation fault=.
+Does that mean I get my "I'm a real programmer" badge?  Perhaps after
+I fix it.  That's fair, I could understand that.
