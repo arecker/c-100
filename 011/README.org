@@ -1,0 +1,161 @@
+#+TITLE: Day 011
+
+/I just needed time alone with my own thoughts.  Got treasures in my mind but couldn't open up my own vault.  My childlike creativity, purity, and honesty is honestly being crowded by these grown thoughts./
+
+[[file:screenshot.png]]
+
+Today I was feeling a little burned out.  I decided to take a day to
+review some things I've learned.
+
+-----
+
+Pointers are typed, and declared just like their type.
+
+#+BEGIN_SRC C
+  int i = 4;
+  int *i_ptr;
+  char c = 'a';
+  char *c_ptr;
+#+END_SRC
+
+Just as variables are assigned values, pointers are assigned addresses
+to where values are stored.
+
+#+BEGIN_SRC C
+  int i = 4;
+  int *i_ptr = &i;
+#+END_SRC
+
+Variables can be indirectly accessed by pointers through the indirect
+access operator.
+
+#+BEGIN_SRC C :results output
+  int i = 4;
+  int *i_ptr = &i;
+  printf("Address: %p\n", i_ptr);
+  printf("Value: %d\n", *i_ptr);
+#+END_SRC
+
+#+RESULTS:
+: Address: 0x7ffecb727c94
+: Value: 4
+
+In a way, pointers and variables are the inverse of each other.  Given
+variable =i= and pointer =i_ptr= assigned =&i=:
+
+1. To get the value of variable =i=, you use =i=.  To get the address
+   of =i=, you use =&i=.
+
+2. To get the address of =i= from =i_ptr=, you use =i_ptr=.  To get
+   the value of =i= from =i_ptr=, you use =*i_ptr=.
+
+In other words, given:
+
+#+BEGIN_SRC C
+int i = 4;
+int *i_ptr = &i;
+#+END_SRC
+
+We can conclude that
+
+#+BEGIN_SRC C
+i == *i_ptr == 4;
+&i == i_ptr == [address];
+#+END_SRC
+
+The name of an array is just a pointer to its first value;
+
+#+BEGIN_SRC C :results output
+  int numbers[5] = {5, 4, 3, 2, 1};
+  printf("numbers == &numbers[0]: %d\n", numbers == &numbers[0]);
+  printf("*numbers == numbers[0]: %d\n", *numbers == numbers[0]);
+#+END_SRC
+
+#+RESULTS:
+: numbers == &numbers[0]: 1
+: *numbers == numbers[0]: 1
+
+Incrementing a pointer by one advances the pointer by
+=sizeof([type])=.  Decreasing a pointer does the opposite.
+
+#+BEGIN_SRC C :results output
+  int numbers[5] = {1, 2, 3, 4, 5};
+  int *ptr = numbers - 1;
+  int i = 0;
+
+  puts("GOING UP");
+
+  do {
+    ptr++;
+    printf("numbers[%d]: %d\n", i, *ptr);
+    i++;
+   } while (i < 5);
+
+  puts("GOING DOWN");
+  ptr++;
+
+  do {
+      ptr--;
+      printf("numbers[%d]: %d\n", i, *ptr);
+      i--;
+   } while (i > 0);
+#+END_SRC
+
+#+RESULTS:
+#+begin_example
+GOING UP
+numbers[0]: 1
+numbers[1]: 2
+numbers[2]: 3
+numbers[3]: 4
+numbers[4]: 5
+GOING DOWN
+numbers[5]: 5
+numbers[4]: 4
+numbers[3]: 3
+numbers[2]: 2
+numbers[1]: 1
+#+end_example
+
+Strings are just arrays of characters terminated by a special
+character called a /null bite/.
+
+#+BEGIN_SRC C :results output
+  char name1[] = {'A', 'l', 'e', 'x', '\0'};
+  char name2[] = "Alex";
+  printf("Hey %s, is your name really %s?\n", name1, name2);
+#+END_SRC
+
+#+RESULTS:
+: Hey Alex, is your name really Alex?
+
+Use =malloc= to dynamically allocate memory.  This returns a pointer
+of =void= type so it can be compatible with anything.  Cast it to the
+type you want.
+
+In other words, this is a compile time allocation:
+
+#+BEGIN_SRC C :results output
+  char word[5];
+  for (int i=0; i < 4; i++)
+    word[i] = 'A';
+  word[5] = '\0';
+  puts(word);
+#+END_SRC
+
+#+RESULTS:
+: AAAA
+
+This is a runtime allocation:
+
+#+BEGIN_SRC C :results output
+  char *word = (char *) malloc(5 * sizeof(char));
+  for (int i=0; i < 4; i++)
+    word[i] = 'A';
+  word[5] = '\0';
+  puts(word);
+  free(word);
+#+END_SRC
+
+#+RESULTS:
+: AAAA
