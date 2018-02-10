@@ -1,0 +1,17 @@
+#+TITLE: Day 012
+
+#+BEGIN_QUOTE
+If something goes a little wrong, you can go ahead and bring it on.
+Because if you knock-knock me over I will get back up again.
+#+END_QUOTE
+
+-- Princess Poppy, "Trolls"
+
+[[file:screenshot.png]]
+
+I'm slowly regaining my confidence in C, this time moving deliberately
+more slowly.  Structs are very reasonable and fit in right where I'd
+expect them to.  I accidentally discovered that functions can return
+structs.  This alone has made me a little more efficient in cranking
+out the code for these examples where I have to read in lists of
+things and enter the property one at a time.
