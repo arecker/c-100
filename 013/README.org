@@ -1,0 +1,28 @@
+#+TITLE: Day 013
+
+#+BEGIN_QUOTE
+You think Einstein walked around thinkin' everyone was a bunch of dumb
+shits?
+#+END_QUOTE
+
+-- Rita, /Idiocracy/
+
+[[file:screenshot.png]]
+
+Today I finished up the chapter about structs, which ended with some
+interesting new syntax for structs and pointers, along with a brief
+look at the seemingly meaningless "union" type.  Which is like a
+struct, but you can only use one instance at a time.  Wonderful.  I'm
+hoping that doesn't come up again.
+
+It's starting to click that pointers are all about efficiency.  As
+emphasized by the book, arrays suck because you have to declare how
+much space you are going to use upfront.  BUT using a pointer to an
+array is a way to leave that up to some other part of the program.  I
+guess if you're going to allocate memory, do it in one place.
+
+Also, it's never a mystery where the most expensive part of your
+program is.  I have a half hour left, so I'm going to spend some time
+reading up on the linux kernel and start familiarizing myself with the
+source code.  I already know enough C syntax to follow along,  which
+is exciting.
