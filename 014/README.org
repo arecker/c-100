@@ -1,0 +1,31 @@
+#+TITLE: Day 014
+
+#+BEGIN_QUOTE
+First off, I’d suggest printing out a copy of the GNU coding
+standards, and NOT read it. Burn them, it’s a great symbolic gesture.
+#+END_QUOTE
+
+-- /Linux Kernel Coding Style/
+
+[[file:screenshot.png]]
+
+Today's lesson was short, so I filled the time reading through the
+[[https://www.kernel.org/doc/html/v4.10/process/coding-style.html][Linux Kernel Coding Standard]], which was a hilarious read.  No shortage
+of sardonic commentary around GNU, Emacs, and indenting with spaces.
+I fixed up my config to match the standard.  It looks a little strange
+to me, but may as well get used to it while I largely don't understand
+what I'm doing.
+
+Had to look twice at static variables.  Those things are magical.
+Given this piece of code:
+
+#+BEGIN_SRC C
+  void func(void) {
+    static int i = 0;
+    printf("i = %d\n", i++);
+  }
+#+END_SRC
+
+The value of =i= will increment each time you call =func()=.  Because
+it's a static variable, the compiler will skip the initialization step
+after the first time, even if it also assigns the value to zero.
