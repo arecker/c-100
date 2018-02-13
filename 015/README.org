@@ -1,0 +1,50 @@
+#+TITLE: Day 015
+
+#+BEGIN_QUOTE
+I'm so fancy.  You already know.  I'm in the fast lane from L.A. to
+Toyko.
+#+END_QUOTE
+
+-- Iggy Azalea, /Fancy/
+
+[[file:screenshot.png]]
+
+Got kind of bored with the material of the book, which today was
+infinite loops, breaks, and other things that resemble
+Java/C#/JavaScript/Ruby/Python almost exactly.
+
+Instead I wrote a pretty sweet program that would count the vowels in
+bible.txt and display the results.  Even got fancy and used
+preprocessor constants to configure if Y was a vowel.
+
+Result set:
+
+#+BEGIN_SRC C
+  struct result_set
+  {
+	  unsigned long other;
+	  unsigned long a;
+	  unsigned long e;
+	  unsigned long i;
+	  unsigned long o;
+	  unsigned long u;
+  #if Y_IS_VOWEL
+	  unsigned long y;
+  #endif
+  };
+#+END_SRC
+
+Later on:
+
+#+BEGIN_SRC C
+  #if Y_IS_VOWEL
+	  case 'y':
+	  case 'Y':
+		  results->y++;
+		  return;
+  #endif
+	  default:
+		  results->other++;
+		  return;
+	  }
+#+END_SRC
