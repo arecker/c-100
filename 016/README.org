@@ -1,0 +1,26 @@
+#+TITLE: Day 016
+
+#+BEGIN_QUOTE
+That looks like something out of hell.
+#+END_QUOTE
+
+-- My Mother, watching the Westminster Dog Show
+
+[[file:screenshot.png]]
+
+Read a little about input, output, and streams.  I was glad to finally
+learn why =stdin= and =stdout= where just magically available
+variables.  And also why some of the examples in the book fail me.  It
+turns out these examples use =get()=, which according to StackOverflow
+was officially removed from the ANSI standard a while ago.  Most
+compilers allow this, but not without a good amount of complaining.
+The safe alternative is to use =fgets=, the differences being (1) you
+must specify the input stream and (2) the trailing newline will be
+preserved.
+
+I wonder if I could write a =gets= function?
+
+[ten minutes later]
+
+Bah.  It's harder than it sounds.  That could be a fun challenge for
+next time.
