@@ -1,0 +1,27 @@
+#+TITLE: Day 017
+
+#+BEGIN_QUOTE
+The least you could do is keep my salary consistent with inflation!
+HYEAH!
+#+END_QUOTE
+
+-- Dwight Schrute
+
+[[file:screenshot.png]]
+
+Good stuff today.  Finished the chapter on I/O streams.  There's a lot
+of symmetry those functions.  It was also good to read about what the
+deal is between =gets= and =fgets= and figure out why gcc has been
+yelling at me.
+
+Contrary to what the book said, =fflush= is only intended to clear
+output streams.  In order to flush =stdin=, I had to make my own
+function.
+
+#+BEGIN_SRC C
+  void flush(void)
+  {
+	  int c;
+	  while((c = getchar()) != '\n' && c != EOF);
+  }
+#+END_SRC
