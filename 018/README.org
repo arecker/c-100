@@ -1,0 +1,15 @@
+#+TITLE: Day 018
+
+#+BEGIN_QUOTE
+Alright.  There goes Mister Poop.  Now who likes Dane Cook?
+#+END_QUOTE
+
+[[file:screenshot.png]]
+
+Oooh boy.  Things are getting pretty technical now.  Pointers to
+pointers?  Arrays of pointers to pointers?  What's next, pointers to
+arrays of pointers to pointers?  MAMA MIA.
+
+I'm kind of tired tonight and sort of losing my mind.  I'm taking it
+slow today.  I'm glad I cemented my understanding of arrays being a
+pointer to the first element, because that's kind of important here.
