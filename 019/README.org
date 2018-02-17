@@ -1,0 +1,26 @@
+#+TITLE: Day 019
+
+#+BEGIN_QUOTE
+I don't have a fancy quote today.
+#+END_QUOTE
+
+-- Me
+
+[[file:screenshot.png]]
+
+Pointers are getting more and more complicated.  Apparently you can
+also create pointers to functions.  Which is kind of cool.  It makes
+me think that quite a bit of functional programming in C is possible.
+
+The book is trying to work sorting into more solutions.  I should
+probably familiarize myself with some of those if I want to keep up.
+At least the bubble sort or something.
+
+Ugh.  I decided to take it easy on the text tonight.  It was starting
+to heavily get into linked lists, and I'm a little buzzed from
+drinking peach moonshine (which was lovely).  I'm just going to see if
+I can crank out a bubble sort and call it a day.
+
+So the bubble sort is actually really complicated.  As discouraging as
+it is, I don't think I'm anywhere close to being able to do that
+without some serious thought.  And that's supposed to be the terrible one.
