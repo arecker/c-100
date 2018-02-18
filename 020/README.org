@@ -1,0 +1,23 @@
+#+TITLE: Day 020
+
+#+BEGIN_QUOTE
+YOU CAN'T GET DISEASES FROM A BIRD.
+#+END_QUOTE
+
+[[file:screenshot.png]]
+
+Wow.  Linked lists are really challenging.  And kind of fun.
+Manipulating elements of a linked list suddenly puts the crazy =(*
+thing)->prop= in a new light.  For example, if I wanted to print the
+name of the third person in a linked list, I could simple write
+
+#+BEGIN_SRC C
+  head->next->next->name
+#+END_SRC
+
+It almost reads like English.  "Start at the head, take the next, take
+the next, and give me the name."  Well, maybe not English, but like a
+bad text message.
+
+I'm really excited about messing with linked lists.  Easily, the most
+fun part about C so far.
