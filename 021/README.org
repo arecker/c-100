@@ -1,0 +1,20 @@
+#+TITLE: Day 021
+
+#+BEGIN_QUOTE
+The files are /in/ the computer.
+#+END_QUOTE
+
+-- Hansel, /Zoolander/
+
+[[file:screenshot.png]]
+
+Well today was a little more productive.  I was not in the mood for
+coding, since my phone bricked itself while I was ordering an Uber
+outside the movie theater.  But with my wife's encouragement, I was
+able to put the rage aside and work on C for an hour.
+
+Today was writing to files.  This was a lot more simple than I thought
+it would be.  As it turns out, =printf= is really just =fprintf= with
+the output stream specified for me.  So all I have to do is use
+=fopen= to create an output stream attached to a file and =printf= to
+it.  Wonderful.
