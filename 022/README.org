@@ -1,0 +1,21 @@
+#+TITLE: Day 022
+
+#+BEGIN_QUOTE
+I think it is one of those made up things adults tell kids,
+like vitamins.
+#+END_QUOTE
+
+-- Miguel, /Coco/
+
+[[file:screenshot.png]]
+
+Really digging this chapter on file output and input.  Some good
+insight into the guts of how a computer writes to storage devices.
+Also getting some good code out of it.  Having learned this, I feel
+like I could get away with writing something productive.
+
+Also, I found it funny that the =rand()= was returning the same
+numbers on each run.  Luckily I came across this in a common lisp
+program I was working on, and I remembered that I had to seed the
+library with a value.  It is convenient to just use =time(NULL)= for
+this purpose.
