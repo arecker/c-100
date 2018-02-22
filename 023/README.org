@@ -1,0 +1,19 @@
+#+TITLE: Day 023
+
+#+BEGIN_QUOTE
+ It’s God’s job to judge, the Holy Spirit’s job to convict, and our
+ job to love, and we dare not mix those up.
+#+END_QUOTE
+
+-- Billy Graham
+
+[[file:screenshot.png]]
+
+Ooh boy.  That was a fun one.  Love me some file operations.  Kind of
+funny that C doesn't have a =copy= library function.  What a perfect
+little challenge to play around with.  While I'm much happier with my
+logic compared to the book, I'm getting a weird character printed at
+the end of my copy.  Pride cometh before destruction, I guess.
+
+Getting really excited to manipulate strings.  I just realized that I
+don't know how to concatenate two words together.
