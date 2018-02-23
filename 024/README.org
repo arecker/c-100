@@ -1,0 +1,18 @@
+#+TITLE: Day 024
+
+#+BEGIN_QUOTE
+I'm sure we're taller in another dimension
+You say we're smaller and not worth the mention
+You’re tired of movin', your body’s achin'
+We could vacay, there's places to go
+Clearly this isn't all that there is
+Can't take what's been given.
+#+END_QUOTE
+
+-- Frank Ocean, /White Ferrari/
+
+[[file:screenshot.png]]
+
+Working on strings today.  I'm digging it, so far pretty straight
+forward.  And now I don't even feel like I really need to think about
+pointers and addresses.  It's getting more natural.
