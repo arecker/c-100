@@ -1,0 +1,34 @@
+#+TITLE: Day 025
+
+#+BEGIN_QUOTE
+If you're not familiar with the term /concatenation/, you might be
+asking, "What is it?" and "Is it legal?"
+#+END_QUOTE
+
+-- Sam's Teach Yourself C Programming in One Hour a Day
+
+[[file:screenshot.png]]
+
+OK, so the string stuff is pretty cool.  And fair.  The only trick
+with concatenating strings, as expected, is that you need to have
+enough space allocated ahead of time. I think I can wrap my head
+around that.
+
+Also, oh wow the string functions are pretty cool.  A lot more
+advanced than I thought it would be.  Making an =index_of= function is
+pretty trivial.  Here let's try it.
+
+#+BEGIN_SRC C
+  #include <string.h>
+
+  int index_of(const char *word, char letter)
+  {
+	  char *loc = strchr(word, letter);
+	  if (loc == NULL)
+		  return -1;
+	  else
+		  return word - loc;
+  }
+#+END_SRC
+
+Good ol' pointer arithmetic doing most of the heavy lifting.
