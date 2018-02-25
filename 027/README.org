@@ -1,0 +1,45 @@
+#+TITLE: Day 027
+
+#+BEGIN_QUOTE
+What is a city, but its people?
+#+END_QUOTE
+
+-- Shakespeare
+
+[[file:screenshot.png]]
+
+The errors in the code examples are really starting to drive me
+crazy.  If you are going to explain something as strange as varying
+numbers of function arguments, then holy hell get it right please.
+Took a while to figure out what was going on.
+
+The book's =average= function looked like this.
+
+#+BEGIN_SRC C
+  float average(int num, ...);
+#+END_SRC
+
+And it was calling it like this.
+
+#+BEGIN_SRC C
+  float result = average(0, 1, 2, 3, 4);
+#+END_SRC
+
+Sooooo, what does =int num= mean in this case?  What am i supposed to
+do with that?  Like hell, that's what typo that an introductory text
+book can't afford to make when explaining a new macro.  As it turns
+out, the book intended to pass in the number of arguments before the
+list of arguments, so the above example should have looked like this.
+
+#+BEGIN_SRC C
+  float result = average(
+	  5, // number of arguments
+	  0, 1, 2, 3, 4, 5 // the actual numbers
+  );
+#+END_SRC
+
+Eventually confirmed that by looking it up.  Still just perturbed at
+yet another critical typo in the example solutions that sent me down a
+rabbit trail.
+
+SIGH.
