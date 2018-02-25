@@ -1,0 +1,28 @@
+#+TITLE: Day 026
+
+#+BEGIN_QUOTE
+Vrish bish bish dish pfffffft.
+#+END_QUOTE
+
+-- My Son, who is supposed to be napping.
+
+[[file:screenshot.png]]
+
+I got home late last night, so doing a double header today.  Finished
+up the C string functions chapter and discovered my new favorite one
+liner.
+
+#+BEGIN_SRC C
+  char buffer[80];
+  puts("Enter a blank line to exit");
+  while (strcmp(fgets(buffer, 80, stdin), "\n") != 0) {
+	  // do things
+  }
+#+END_SRC
+
+A lot of the books examples involve a prompt in a while loop that
+should =break= at empty input.  This is a little bit cleaner I think.
+
+Also, who the hell is responsible for these terrible names?  =strspn=?
+=strcmp=?  =aoi= and =aof=?  Geeze Louise, it's like these people have
+something against vowels or something.
