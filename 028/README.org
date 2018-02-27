@@ -1,0 +1,19 @@
+#+TITLE: Day 028
+
+#+BEGIN_QUOTE
+All these people who say success changes people; well, no, it just
+magnifies what's there.
+#+END_QUOTE
+
+-- Kevin Smith
+
+[[file:screenshot.png]]
+
+Just realized I'm getting to the end of this book.  Today's chapter
+was basically a "random functions" overview.  So I had better start
+thinking of some more topics and projects to work on for the remaining
+70 days of this challenge.
+
+Really impressed that both =qsort= and =bsearch= are in stdlib, but
+now how are pretentious tech companies supposed to screen candidates?
+Surely they wouldn't accept =#include <stdlib.h>= as a solution!
