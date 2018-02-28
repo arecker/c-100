@@ -1,0 +1,17 @@
+#+TITLE: Day 029
+
+#+BEGIN_QUOTE
+Tú me traes un poco loco
+Un poquititito loco
+Estoy adivinando
+Qué quieres y pa' cuándo
+#+END_QUOTE
+
+-- /Un Poco Loco/
+
+[[file:screenshot.png]]
+
+Some interesting tidbits today, but no real /bangers/.  I can tell the
+text book is coming to a close, as it's sort of just gathering up some
+unrelated little topics.  So I'm getting stressed, since I have to
+start thinking of a product that will take me seventy days to finish.
