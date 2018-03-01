@@ -1,0 +1,19 @@
+#+TITLE: Day 030
+
+#+BEGIN_QUOTE
+Notice that eac of these are preceded and followed by double
+underscores.  This is done to prevent you from redefining them , on
+the theory that programmers are unlikely to create their own
+definitions with leading and trailing underscores.
+#+END_QUOTE
+
+-- Lesson 22, Advanced Compiler Use
+
+[[file:screenshot.png]]
+
+Well that's all she wrote.  Today I finished the book.  Tomorrow, I
+start planning on my senior thesis: writing a guitar tuner in C.  I
+hardly feel equipped for that, but then again I have 70 days to figure
+it out.  I feel like I'll eventually get it.
+
+Onward.

@@ -1,0 +1,1 @@
+long square(int x);
