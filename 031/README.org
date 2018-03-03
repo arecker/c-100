@@ -1,0 +1,17 @@
+#+TITLE: Day 031
+
+#+BEGIN_QUOTE
+What makes us love? What makes us dream?  I found the light, now it's
+all I see. So we ride that wave, when that tide comes in,
+and that water deep, so be prepared to swim.
+#+END_QUOTE
+
+-- towkio
+
+[[file:screenshot.png]]
+
+Well now that I'm done with my book, I'm on my own for the next
+seventy days.  I'm off to a great start.  Within this hour, I was able
+to install the libraries needed for ALSA development and compile some
+test programs.  I also found a pretty complete tutorial for capturing
+audio using the ALSA library.
