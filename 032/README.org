@@ -1,0 +1,19 @@
+#+TITLE: Day 032
+
+#+BEGIN_QUOTE
+Power comes in response to a need, not a desire. You have to create
+that need.
+#+END_QUOTE
+
+-- Goku, /Dragon Ball Z/
+
+[[file:screenshot.png]]
+
+Really jazzed about how helpful the documentation is.  Though the ALSA
+library was intimidating at first, I'm already getting used to how
+some things work.  Today I wrote a function to print some information
+about all the audio hardware on my laptop.
+
+Luckily, C is pretty minimalist.  So while it looks like there are a
+lot of datatypes and routines to learn when looking at a library,
+everything is basically a struct, number, or function.
