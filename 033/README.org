@@ -1,0 +1,21 @@
+#+TITLE: Day 033
+
+#+BEGIN_QUOTE
+People said I should accept the world.  Bullshit!  I do not accept the
+world.
+#+END_QUOTE
+
+-- Richard Stallman
+
+[[file:screenshot.png]]
+
+Tonight I was a little distracted upon discovering that I'm still
+dealing with the fallout of losing my phone.  I just... ugh.  OK I'm
+not going to complain about that here.  This is a happy place for fun
+times and great learning.
+
+Kept working at some example code for reading in audio data.  It
+appears that just reading in the raw data isn't enough to get
+something like VLC to play it.  I think "encoding" is another layer.
+Reading on, it seems the only way to play a sample that I record with
+raw data is to write a program to play raw data.  More on that later I guess.
