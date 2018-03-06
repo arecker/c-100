@@ -1,0 +1,19 @@
+#+TITLE: Day 034
+
+#+BEGIN_QUOTE
+What hath God wrought?
+#+END_QUOTE
+
+-- Samuel Morse, first telegraph message
+
+[[file:screenshot.png]]
+
+Eureka!  I figured out how to combine the play and record programs.
+As it turns out, it was described at the /end/ of the tutorial.  I
+just got too caught up in the details.  Indeed, you have to use the
+programs together.
+
+#+BEGIN_SRC sh
+  ./record > out.raw
+  ./play < out.raw
+#+END_SRC
