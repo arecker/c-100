@@ -1,0 +1,13 @@
+#+TITLE: Day 035
+
+#+BEGIN_QUOTE
+There is reasonable cause.  It's /because/ I hate him.
+#+END_QUOTE
+
+-- Michael Scott
+
+[[file:screenshot.png]]
+
+Really starting to cut my teeth now.  It turns out I'm not very
+familiar with how the example programs are working.  I tried to break
+them out into some functions, but everything spectacularly broke lol.
