@@ -1,0 +1,19 @@
+#+TITLE: Day 036
+
+#+BEGIN_QUOTE
+Nothing.  I don't get it.
+#+END_QUOTE
+
+-- My Sister in Law
+
+[[file:screenshot.png]]
+
+OK.  Took a few days to clear my head, but the break may have been too
+long.  Right now, C looks like Greek to me, but I've slowly started to
+re assemble my audio program from the bottom up.
+
+I managed to make /some/ progress.  I managed to re tool the example
+to read from a file, rather than expect to get data from stdin - which
+was hard to work with.  My program now reads in what it needs from
+=/dev/urandom=, throwing spurious errors that happen as a result of me
+not reading what =read()= actually was doing.
