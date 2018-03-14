@@ -1,0 +1,19 @@
+#+TITLE: Day 037
+
+#+BEGIN_QUOTE
+Without honesty, art is dead.
+#+END_QUOTE
+
+-- Jon Foreman
+
+[[file:screenshot.png]]
+
+OK I'm officially having fun again.  I figured out how to split things
+into different headers and source files and it's kind of fun.  Maybe I
+went a little crazy with the portability, but I think it's fine that
+I'm exploring.  Not sure what I'm trying to accomplish, but I feel
+better introducting some structure.
+
+I think my short term goal is to write a program that simply creates a
+raw sound file for each guitar string and stops recording when you hit
+enter.
