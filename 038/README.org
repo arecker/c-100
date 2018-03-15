@@ -1,0 +1,20 @@
+#+TITLE: Day 038
+
+#+BEGIN_QUOTE
+The only easy day was yesterday.
+#+END_QUOTE
+
+[[file:screenshot.png]]
+
+Well I'm totally stumped.  Every time I move values around, the
+suddenly get zeroed out and I get floating point errors.  I tried
+converting some of them to pointers, so I would know for sure that
+there was only one copy, but I quickly got in over my head.
+
+I think I need to look to the pros.  It's not even day 40 yet, I can
+afford to do some more reading.  I'm going to find a good audio
+project written in C and glean some tips for how to capture audio in
+more than just one function.
+
+Gosh, I miss day 1-20, when it was just me and a book of silly code
+samples.  This stuff is hard.
